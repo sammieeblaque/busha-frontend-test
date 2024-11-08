@@ -6,6 +6,7 @@ export const Sidebar = styled.div`
   background-color: white;
   padding: 1rem;
   margin-top: 2rem;
+  max-width: 20rem;
 `;
 
 export const MenuItem = styled.div<{ active: boolean }>`

@@ -1,3 +1,5 @@
+import React from "react";
+import { ArrowIcon } from "../bu-icons.tsx";
 import {
   Amount,
   Button,
@@ -9,20 +11,21 @@ import {
 
 export interface WalletProps {
   currency: string;
-  symbol: string;
+  symbol: React.ReactNode;
   amount: string;
-  iconColor: string;
 }
 
-const WalletCard = ({ currency, symbol, amount, iconColor }: WalletProps) => {
+const WalletCard = ({ currency, symbol, amount }: WalletProps) => {
   return (
     <CardContainer>
       <Header>
-        <IconWrapper iconColor={iconColor}>{symbol}</IconWrapper>
+        <IconWrapper>{symbol}</IconWrapper>
         <Currency>{currency}</Currency>
       </Header>
       <Amount>{amount}</Amount>
-      <Button>{/* <ChevronRight size={20} /> */}</Button>
+      <Button>
+        <ArrowIcon />
+      </Button>
     </CardContainer>
   );
 };

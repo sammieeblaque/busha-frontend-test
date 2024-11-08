@@ -1,4 +1,5 @@
 import React from "react";
+import { BTCIcon, ETHIcon, LTCIcon, NGNIcon } from "../bu-icons.tsx";
 import WalletCard from "../ui/bu-wallet-card";
 import Modal from "./Modal";
 import { AddButton, Container, GridContainer, Header, Title } from "./style";
@@ -7,27 +8,23 @@ const LayoutContainer = () => {
   const wallets = [
     {
       currency: "Naira",
-      symbol: "N",
+      symbol: <NGNIcon />,
       amount: "N 105,160,076.51",
-      iconColor: "bg-green-500",
     },
     {
       currency: "Bitcoin",
-      symbol: "B",
+      symbol: <BTCIcon />,
       amount: "10.36490987 BTC",
-      iconColor: "bg-orange-500",
     },
     {
       currency: "Ethereum",
-      symbol: "E",
+      symbol: <ETHIcon />,
       amount: "10.36490987 ETH",
-      iconColor: "bg-blue-500",
     },
     {
       currency: "Litecoin",
-      symbol: "L",
+      symbol: <LTCIcon />,
       amount: "10.36490987 LTC",
-      iconColor: "bg-blue-400",
     },
   ];
 

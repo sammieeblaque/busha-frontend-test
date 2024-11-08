@@ -1,3 +1,5 @@
+import { getInitials } from "../../utils";
+import { BushaLogo } from "../bu-icons.tsx";
 import {
   Avatar,
   Container,
@@ -8,14 +10,17 @@ import {
 } from "./style";
 
 const Header = () => {
+  const name = "Oluwatobi Akindunjoye";
   return (
     <Container>
       <LeftSection>
-        <Title>:herb: busha</Title>
+        <Title>
+          <BushaLogo />
+        </Title>
       </LeftSection>
       <RightSection>
-        <Avatar />
-        <Name>Oluwatobi Akindunjoye</Name>
+        <Avatar>{getInitials(name)}</Avatar>
+        <Name>{name}</Name>
       </RightSection>
     </Container>
   );

@@ -49,15 +49,22 @@ export const RightSection = styled.div`
   align-items: center;
   gap: 0.5rem; /* Equivalent to gap-2 */
   background-color: #f3f4f6; /* Equivalent to bg-gray-100 */
-  padding: 0.5rem 1rem; /* Equivalent to px-4 py-2 */
+  padding: 0.3rem 1rem; /* Equivalent to px-4 py-2 */
   border-radius: 9999px; /* Equivalent to rounded-full */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Avatar = styled.div`
   width: 2rem; /* Equivalent to w-8 */
   height: 2rem; /* Equivalent to h-8 */
   background-color: #e5e7eb; /* Equivalent to bg-gray-300 */
-  border-radius: 9999px; /* Equivalent to rounded-full */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 9999px;
+  padding: 0.1rem; /* Equivalent to rounded-full */
 `;
 
 export const Name = styled.span`
@@ -71,7 +78,7 @@ export const CardContainer = styled.div`
   color: white;
   padding: 1.5rem; /* Equivalent to p-6 */
   border-radius: 1rem; /* Equivalent to rounded-xl */
-  width: 20rem; /* Equivalent to w-80 */
+  width: 19rem; /* Equivalent to w-80 */
   position: relative;
   overflow: hidden;
   height: 10rem;
@@ -84,17 +91,18 @@ export const Header = styled.div`
   margin-bottom: 1rem; /* Equivalent to mb-4 */
 `;
 
-export const IconWrapper = styled.div<{ iconColor: string }>`
+export const IconWrapper = styled.div`
   width: 2rem; /* Equivalent to w-8 */
   height: 2rem; /* Equivalent to h-8 */
-  background-color: ${(props) => props.iconColor || "gray"};
   border-radius: 9999px; /* Equivalent to rounded-full */
   display: flex;
   align-items: center;
   justify-content: center;
 `;
 
-export const Currency = styled.span``;
+export const Currency = styled.span`
+  color: #9aa5b1;
+`;
 
 export const Amount = styled.div`
   font-size: 1.25rem; /* Equivalent to text-xl */

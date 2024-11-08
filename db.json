@@ -47,6 +47,16 @@
       "id": "tRsxUbQ",
       "deposit": true,
       "payout": true
+    },
+    {
+      "currency": "TRX",
+      "hold": "0",
+      "pending_balance": "0",
+      "balance": "0",
+      "name": "TRON",
+      "type": "digital",
+      "imgURL": "https://res.cloudinary.com/dwoc5fknz/image/upload/v1600068604/alice_v3/TRX.svg",
+      "id": "0OeCgZA"
     }
   ],
   "wallets": [
@@ -85,12 +95,6 @@
       "name": "Dogecoin",
       "type": "digital",
       "imgURL": "https://res.cloudinary.com/dwoc5fknz/image/upload/v1619043964/alice_v3/DOGE.svg"
-    },
-    {
-      "currency": "TRX",
-      "name": "TRON",
-      "type": "digital",
-      "imgURL": "https://res.cloudinary.com/dwoc5fknz/image/upload/v1600068604/alice_v3/TRX.svg"
     }
   ]
 }

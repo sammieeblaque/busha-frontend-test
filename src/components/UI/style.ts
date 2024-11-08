@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 // Side bar
 export const Sidebar = styled.div`
-  width: 30rem; /* 48 units in Tailwind */
+  width: 30rem;
   background-color: white;
   padding: 1rem;
   margin-top: 2rem;
@@ -10,7 +10,7 @@ export const Sidebar = styled.div`
 `;
 
 export const MenuItem = styled.div<{ active: boolean }>`
-  padding: 0.8rem;
+  padding: 1rem;
   margin-bottom: 0.5rem;
   border-radius: 0.375rem; /* Tailwind's rounded */
   cursor: pointer;

@@ -181,7 +181,7 @@ const LayoutContainer = () => {
 
           <ButtonWrapper>
             <ModalButton onClick={onSubmitWalletCreation}>
-              {"Create wallet"}
+              {createWalletLoading ? "Creating wallet" : "Create wallet"}
             </ModalButton>
           </ButtonWrapper>
 

@@ -227,3 +227,7 @@ const LayoutContainer = () => {
 };
 
 export default LayoutContainer;
+
+/***
+ * Kindly note that this component can be further broken down. I just chose not too because it's not necessarily big enough
+ */

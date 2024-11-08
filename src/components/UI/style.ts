@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 // Side bar
 export const Sidebar = styled.div`
-  width: 12rem; /* 48 units in Tailwind */
+  width: 30rem; /* 48 units in Tailwind */
   background-color: white;
   padding: 1rem;
+  margin-top: 2rem;
 `;
 
 export const MenuItem = styled.div<{ active: boolean }>`
-  padding: 0.5rem;
+  padding: 0.8rem;
   margin-bottom: 0.5rem;
   border-radius: 0.375rem; /* Tailwind's rounded */
   cursor: pointer;
@@ -73,6 +74,7 @@ export const CardContainer = styled.div`
   width: 20rem; /* Equivalent to w-80 */
   position: relative;
   overflow: hidden;
+  height: 10rem;
 `;
 
 export const Header = styled.div`

@@ -1,4 +1,6 @@
+import React from "react";
 import WalletCard from "../UI/bu-wallet-card";
+import Modal from "./Modal";
 import { AddButton, Container, GridContainer, Header, Title } from "./style";
 
 const LayoutContainer = () => {
@@ -28,17 +30,25 @@ const LayoutContainer = () => {
       iconColor: "bg-blue-400",
     },
   ];
+
+  const [isOpen, setIsOpen] = React.useState<boolean>(false);
   return (
     <Container>
       <Header>
         <Title>Wallets</Title>
-        <AddButton>+ Add new wallet</AddButton>
+        <AddButton onClick={() => setIsOpen((prev) => !prev)}>
+          + Add new wallet
+        </AddButton>
       </Header>
       <GridContainer>
         {wallets.map((wallet) => (
           <WalletCard key={wallet.currency} {...wallet} />
         ))}
       </GridContainer>
+
+      <Modal isOpen={isOpen}>
+        <span onClick={() => setIsOpen((prev) => !prev)}>close</span>
+      </Modal>
     </Container>
   );
 };

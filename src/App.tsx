@@ -1,14 +1,30 @@
 import React from "react";
-import Modal from "./components/shared/Modal";
+import styled from "styled-components";
+import LayoutContainer from "./components/shared/Layout";
+import Header from "./components/UI/bu-header";
+// import Modal from "./components/shared/Modal";
+import SideBar from "./components/UI/bu-sidebar";
+
+const Container = styled.div`
+  min-height: 100vh; /* Equivalent to min-h-screen */
+  background-color: white;
+  padding: 0px 120px; /* Equivalent to bg-white */
+`;
+
+const MainWrapper = styled.div`
+  display: flex; /* Equivalent to flex */
+`;
 
 function App() {
-  const [open, setIsOpen] = React.useState(false);
   return (
     <>
-      <Modal isOpen={open}>
-        <div onClick={() => setIsOpen((prev) => !prev)}>Close</div>
-      </Modal>
-      <div onClick={() => setIsOpen((prev) => !prev)}>Busha</div>;
+      <Container>
+        <Header />
+        <MainWrapper>
+          <SideBar />
+          <LayoutContainer />
+        </MainWrapper>
+      </Container>
     </>
   );
 }

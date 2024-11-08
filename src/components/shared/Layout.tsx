@@ -1,5 +1,5 @@
 import React from "react";
-import WalletCard from "../UI/bu-wallet-card";
+import WalletCard from "../ui/bu-wallet-card";
 import Modal from "./Modal";
 import { AddButton, Container, GridContainer, Header, Title } from "./style";
 

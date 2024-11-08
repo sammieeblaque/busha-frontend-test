@@ -1,9 +1,7 @@
-import React from "react";
 import styled from "styled-components";
 import LayoutContainer from "./components/shared/Layout";
-import Header from "./components/UI/bu-header";
-// import Modal from "./components/shared/Modal";
-import SideBar from "./components/UI/bu-sidebar";
+import Header from "./components/ui/bu-header";
+import SideBar from "./components/ui/bu-sidebar";
 
 const Container = styled.div`
   min-height: 100vh; /* Equivalent to min-h-screen */
